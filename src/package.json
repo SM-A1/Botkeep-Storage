@@ -1,0 +1,23 @@
+{
+  "name": "telegram-file-share-bot",
+  "version": "1.0.0",
+  "description": "Telegram file upload & share bot: private Telegram channel for storage, Redis for metadata, deployable on Railway.",
+  "main": "src/index.js",
+  "type": "module",
+  "private": true,
+  "license": "MIT",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "start:local": "node --env-file=.env src/index.js",
+    "dev": "node --watch --env-file=.env src/index.js"
+  },
+  "dependencies": {
+    "@grammyjs/auto-retry": "^2.0.0",
+    "express": "^4.21.0",
+    "grammy": "^1.30.0",
+    "ioredis": "^5.4.0"
+  }
+}
